@@ -1,0 +1,15 @@
+.clients {
+    .clients-container{
+        p{
+            font-family: "Bigilla";
+            font-size: 80px;
+            line-height: 100px;
+
+            @media (max-width: 900px) {
+                font-size: 36px;
+                line-height: 50px;
+                text-align: justify;
+            }   
+        }
+    }
+}

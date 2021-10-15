@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Sk-Modernist";
+  src: url(./assets/fonts/sk-modernist/Sk-Modernist-Regular.otf);
+}
+
+@font-face {
+  font-family: "Bigilla";
+  src: url(./assets/fonts/bigilla/Bigilla.otf);
+}
+
+* {
+	margin: 0;
+	padding: 0%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Sk-Modernist";
+	color: #fff;
+}
+
+html, body {
+	overflow-x: hidden;
+	background: #0a0a0a;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+
+  .container{
+    width: 96%;
+    margin: 0px auto;
+  }
+}
+
+.navbar{
+  .navbar-container{
+      display: flex;
+      padding: 12px 0;
+      font-size: 16px;
+      justify-content: space-between;
+
+      .site-title, .site-type{
+          flex-grow: 1;
+      }
+
+      .site-year{
+          flex-grow: 2;
+          text-align: right;
+      }
+  }
+}
+
+.section-header{
+    .section-header-container{
+        display: flex;
+        padding: 12px 0;
+        font-size: 16px;
+        justify-content: space-between;
+    }
+}

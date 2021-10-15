@@ -1,0 +1,16 @@
+.header{
+    margin: 80px 0;
+	z-index: 2 !important;
+
+    .header-container{
+        h1{
+            font-family: "Bigilla";
+	        font-size: 12rem;
+            font-weight: 400;
+
+            @media (max-width: 900px){
+                font-size: 5.4rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+.socials{
+    padding: 20px 0;
+
+    .socials-container{
+        display: flex;
+        justify-content: space-between;
+
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            font-family: "Bigilla";
+            font-size: 64px;
+
+            @media (max-width: 900px){
+                font-size: 30px;
+            }
+        }
+    }
+}

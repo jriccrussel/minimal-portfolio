@@ -1,0 +1,27 @@
+.hero-image{
+    width: 100%;
+    margin-top: -300px;
+
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    @media (max-width: 900px){
+        margin-top: 40px;
+    }
+
+    .hero-image-container{
+        width: 40%;
+        float: right;
+
+        img{
+            width: 100%;
+        }
+
+        @media (max-width: 900px){
+            width: 100%;
+        }
+    }
+}

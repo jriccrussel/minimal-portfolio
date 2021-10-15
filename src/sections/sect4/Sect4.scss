@@ -1,0 +1,27 @@
+.about{
+    width: 100%;
+
+    &::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    .about-container{
+        width: 70%;
+        float: right;
+
+        @media (max-width: 900px){
+            width: 100%;
+        }
+
+        p{
+            margin: 40px 0;
+            font-size: 36px;
+
+            @media (max-width: 900px){
+                font-size: 24px;
+            }
+        }
+    }
+}
