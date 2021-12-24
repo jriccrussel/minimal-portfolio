@@ -44,7 +44,7 @@ const Sect6 = () => {
                     <nav className="menu">
                         {data.map((item, index) => {
                             const { title, img, name } = item
-                            console.log(index)
+                            
                             return(
                                 <div className="menu__item-outer" key={index}>
                                     <div className="menu__item">
