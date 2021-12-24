@@ -44,10 +44,10 @@ const Sect6 = () => {
                     <nav className="menu">
                         {data.map((item, index) => {
                             const { title, img, name } = item
-
+                            console.log(index)
                             return(
-                                <div className="menu__item-outer">
-                                    <div className="menu__item" key={index}>
+                                <div className="menu__item-outer" key={index}>
+                                    <div className="menu__item">
                                         <a className="menu__item-link">{title}</a>
                                         <img className="menu__item-img" src={img} alt="" />
                                         <div className="marquee">
