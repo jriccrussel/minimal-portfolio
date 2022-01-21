@@ -15,11 +15,12 @@
 	box-sizing: border-box;
 	font-family: "Sk-Modernist";
 	color: #fff;
+  cursor: none !important;
 }
 
 html, body {
 	overflow-x: hidden;
-	background: #0a0a0a;
+	background: rgb(10, 10, 10);
 }
 
 .wrapper {

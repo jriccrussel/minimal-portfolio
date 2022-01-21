@@ -10,12 +10,12 @@
             position: relative;
             padding: 1.6vw 0 0 0;
             margin: 4px;
+            display: flex;
 
             .menu__item-link{
                 display: inline-block;
-                cursor: pointer;
                 position: relative;
-                color: #ffffff;
+                color: rgb(255, 255, 255);
                 transition: opacity 0.4s;
                 font-family: "Bigilla";
                 text-transform: uppercase;
@@ -47,13 +47,30 @@
                     -webkit-transition-duration: 0.4s;
                     transition-duration: 0.4s;
                 }
+
+                &:hover ~ .tech {
+                    display: none;
+                }
             }
 
             .menu__item-link, .marquee span {
                 white-space: nowrap;
                 font-size: 8vw;
-                padding: 1.6vw 1vw;
+                // padding: 1.6vw 1vw;
+                padding: 0.5vw 1vw 1.6vw;
                 font-weight: 400;
+            }
+
+            .tech{
+                opacity: 0.8;
+                display: flex;
+                font-size: 16px;
+                font-family: "Sk-Modernist";
+                // text-transform: uppercase;
+                letter-spacing: 1px;
+                text-align: right;
+                align-items: flex-end;
+                padding-bottom: 65px;
             }
 
             .menu__item-img{

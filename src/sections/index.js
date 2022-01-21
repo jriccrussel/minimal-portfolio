@@ -4,6 +4,7 @@ import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 import 'locomotive-scroll/src/locomotive-scroll.scss'
 
 // Components
+import Cursor from '../components/Cursor'
 import { Divider } from '../components/Divider'
 import { Spacing } from '../components/Spacing'
 
@@ -40,45 +41,48 @@ const Index1 = () => {
         // </main>
 
 
-        <LocomotiveScrollProvider
-            options={
-                {
-                    smooth: true,
-                    smoothMobile: true,
-                    inertia: 0.75,
+        <>
+            <Cursor />
+            <LocomotiveScrollProvider
+                options={
+                    {
+                        smooth: true,
+                        smoothMobile: true,
+                        inertia: 0.75,
+                    }
                 }
-            }
-        >
-             <main data-scroll-container ref={ref}>
-                <div className="wrapper">
-                    <div className="container">
-                        <Nav />
-                        <Divider />
-                        <Sect1 />
-                        <Sect2 />
-                        <Spacing />
-                        <Sect3 />
-                        <Divider />
-                        <Sect4 />
-                        <Spacing />
-                        <Sect5/>
-                        <Divider />
-                        <Sect6 />
-                        <Spacing />
-                        <Sect7 />
-                        <Divider />
-                        <Sect8 />
-                        <Spacing />
-                        <Sect9 />
-                        <Divider />
-                        <Sect10 />
-                        <Divider />
-                        <Footer />
-                        <br />
+            >
+                <main data-scroll-container ref={ref}>
+                    <div className="wrapper">
+                        <div className="container">
+                            <Nav />
+                            <Divider />
+                            <Sect1 />
+                            <Sect2 />
+                            <Spacing />
+                            <Sect3 />
+                            <Divider />
+                            <Sect4 />
+                            <Spacing />
+                            <Sect5/>
+                            <Divider />
+                            <Sect6 />
+                            <Spacing />
+                            <Sect7 />
+                            <Divider />
+                            <Sect8 />
+                            <Spacing />
+                            <Sect9 />
+                            <Divider />
+                            <Sect10 />
+                            <Divider />
+                            <Footer />
+                            <br />
+                        </div>
                     </div>
-                </div>
-            </main>
-        </LocomotiveScrollProvider>
+                </main>
+            </LocomotiveScrollProvider>
+        </>
     )
 }
 

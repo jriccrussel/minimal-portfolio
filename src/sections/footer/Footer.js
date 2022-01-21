@@ -3,8 +3,8 @@ const Footer = () => {
         <div className="footer">
             <div className="navbar">
                 <div className="navbar-container">
-                    <div className="site-title">created by Jinn</div>
-                    <div className="site-year">55.386656, 11.764279</div>
+                    <div className="site-title">created by Jeffone Audric Russel</div>
+                    <div className="site-year">10.3157, 123.8854</div>
                 </div>
             </div>
         </div>

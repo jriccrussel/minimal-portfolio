@@ -1,0 +1,23 @@
+.cursor {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform-origin: 100% 100%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.scale-cursor{
+    background: #fff;
+    mix-blend-mode: difference;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}

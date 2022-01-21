@@ -12,27 +12,32 @@ const data = [
     {
         title: "/ Asterisk",
         img: proj1,
-        name: "Asterisks"
+        name: "Asterisks",
+        technologies: "ReactJS"
     },
     {
         title: "/ Unlocked",
         img: proj2,
-        name: "Unlocked"
+        name: "Unlocked",
+        technologies: "Shopify"
     },
     {
         title: "/ Offbeat Radio",
         img: proj3,
-        name: "Offbeat Radio"
+        name: "Offbeat Radio",
+        technologies: "GSAP"
     },
     {
         title: "/ Brutal",
         img: proj4,
-        name: "Brutals"
+        name: "Brutals",
+        technologies: "ReactJS"
     },
     {
         title: "/ The Crew",
         img: proj5,
-        name: "The Crews"
+        name: "The Crews",
+        technologies: "Wordpress"
     },
 ]
 
@@ -43,12 +48,13 @@ const Sect6 = () => {
                 <div>
                     <nav className="menu">
                         {data.map((item, index) => {
-                            const { title, img, name } = item
+                            const { title, img, name, technologies } = item
                             
                             return(
                                 <div className="menu__item-outer" key={index}>
                                     <div className="menu__item">
                                         <a className="menu__item-link">{title}</a>
+                                        <span className="tech">{technologies}</span>
                                         <img className="menu__item-img" src={img} alt="" />
                                         <div className="marquee">
                                             <div className="marquee__inner">
