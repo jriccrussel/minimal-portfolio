@@ -10,30 +10,35 @@ import './Sect6.scss'
 
 const data = [
     {
+        id: 1,
         title: "/ Asterisk",
         img: proj1,
         name: "Asterisks",
         technologies: "ReactJS"
     },
     {
+        id: 2,
         title: "/ Unlocked",
         img: proj2,
         name: "Unlocked",
         technologies: "Shopify"
     },
     {
+        id: 3,
         title: "/ Offbeat Radio",
         img: proj3,
         name: "Offbeat Radio",
         technologies: "GSAP"
     },
     {
+        id: 4,
         title: "/ Brutal",
         img: proj4,
         name: "Brutals",
         technologies: "ReactJS"
     },
     {
+        id: 5,
         title: "/ The Crew",
         img: proj5,
         name: "The Crews",
@@ -48,13 +53,13 @@ const Sect6 = () => {
                 <div>
                     <nav className="menu">
                         {data.map((item, index) => {
-                            const { title, img, name, technologies } = item
+                            const { title, img, name, technologies, id } = item
                             
                             return(
                                 <div className="menu__item-outer" key={index}>
                                     <div className="menu__item">
                                         <a className="menu__item-link">{title}</a>
-                                        <span className="tech">{technologies}</span>
+                                        {/* <p className="tech">{technologies}</p> */}
                                         <img className="menu__item-img" src={img} alt="" />
                                         <div className="marquee">
                                             <div className="marquee__inner">
@@ -66,7 +71,7 @@ const Sect6 = () => {
                                         </div>
                                     </div>
 
-                                    <Divider />
+                                    <div className={`sectDiv${id}`}></div>
                                 </div>
                             )
                         })}

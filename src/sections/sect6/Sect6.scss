@@ -10,10 +10,10 @@
             position: relative;
             padding: 1.6vw 0 0 0;
             margin: 4px;
-            display: flex;
+            // display: flex;
 
             .menu__item-link{
-                display: inline-block;
+                display: block;
                 position: relative;
                 color: rgb(255, 255, 255);
                 transition: opacity 0.4s;
@@ -48,16 +48,16 @@
                     transition-duration: 0.4s;
                 }
 
-                &:hover ~ .tech {
-                    display: none;
-                }
+                // &:hover ~ .tech {
+                //     opacity: 0;
+                // }
             }
 
             .menu__item-link, .marquee span {
                 white-space: nowrap;
                 font-size: 8vw;
-                // padding: 1.6vw 1vw;
-                padding: 0.5vw 1vw 1.6vw;
+                padding: 1.6vw 1vw;
+                // padding: 0.5vw 1vw 1.6vw;
                 font-weight: 400;
             }
 
@@ -71,6 +71,7 @@
                 text-align: right;
                 align-items: flex-end;
                 padding-bottom: 65px;
+                opacity: 1;
             }
 
             .menu__item-img{

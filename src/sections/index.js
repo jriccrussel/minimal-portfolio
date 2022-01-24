@@ -56,26 +56,27 @@ const Index1 = () => {
                     <div className="wrapper">
                         <div className="container">
                             <Nav />
-                            <Divider />
+                            <div className="div1"></div>
                             <Sect1 />
                             <Sect2 />
                             <Spacing />
                             <Sect3 />
-                            <Divider />
+                            <div className="div2"></div>
                             <Sect4 />
                             <Spacing />
                             <Sect5/>
-                            <Divider />
+                            <div className="div3"></div>
                             <Sect6 />
                             <Spacing />
+                            <Spacing />
                             <Sect7 />
-                            <Divider />
+                            <div className="div4"></div>
                             <Sect8 />
                             <Spacing />
                             <Sect9 />
-                            <Divider />
+                            <div className="div5"></div>
                             <Sect10 />
-                            <Divider />
+                            <div className="div6"></div>
                             <Footer />
                             <br />
                         </div>
