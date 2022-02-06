@@ -5,7 +5,7 @@ const Sect7 = () => {
         <div className="section-header">
             <div className="section-header-container">
                 <div className="section-title">clients</div>
-                <div className="section-order">/003</div>
+                <div className="section-order">/004</div>
             </div>
         </div>
     )

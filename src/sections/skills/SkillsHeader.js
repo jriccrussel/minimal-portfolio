@@ -1,12 +1,12 @@
-const Sect9 = () => {
+const SkillsHeader = () => {
     return (
         <div className="section-header">
             <div className="section-header-container">
-                <div className="section-title">socials</div>
+                <div className="section-title">skills</div>
                 <div className="section-order">/005</div>
             </div>
         </div>
     )
 }
 
-export default Sect9
+export default SkillsHeader

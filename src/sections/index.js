@@ -21,6 +21,8 @@ import Sect8 from './sect8/Sect8'
 import Sect9 from './sect9/Sect9'
 import Sect10 from './sect10/Sect10'
 import Footer from './footer/Footer'
+import Skills from './skills/Skills'
+import SkillsHeader from './skills/SkillsHeader'
 
 const Index1 = () => {
     const ref = useRef(null)
@@ -69,14 +71,18 @@ const Index1 = () => {
                             <Sect6 />
                             <Spacing />
                             <Spacing />
+                            <SkillsHeader />
+                            <div className="div5"></div>
+                            <Skills />
+                            <Spacing />
                             <Sect7 />
-                            <div className="div4"></div>
+                            <div className="div6"></div>
                             <Sect8 />
                             <Spacing />
                             <Sect9 />
-                            <div className="div5"></div>
+                            <div className="div7"></div>
                             <Sect10 />
-                            <div className="div6"></div>
+                            <div className="div8"></div>
                             <Footer />
                             <br />
                         </div>
