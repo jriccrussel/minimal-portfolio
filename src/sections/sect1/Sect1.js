@@ -4,7 +4,7 @@ const Sect1 = () => {
     return (
         <div className="header">
             <div className="header-container">
-                <h1>Jeffone Audric Russel<br/>Front-End<br/>&nbsp;Developer</h1>
+                <h1>Jeffone Audric <br/>Russel<br/>Front-End<br/>&nbsp;Developer</h1>
             </div>
         </div>
     )

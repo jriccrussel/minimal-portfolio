@@ -4,16 +4,9 @@ const Sect4 = () => {
     return (
         <section className="about">
             <div className="about-container">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-                    quasi sapiente nisi minus neque non explicabo, magni cumque enim
-                    aut!
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad,
-                    eaque nobis. Quidem sint ratione quos veniam!
-                </p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>I’ve been a Web Developer with over 6 years of experience building pixel perfect websites.</p>
+                <p>I have developed a wide array of skills and technologies like React, NextJs, Styled Component, Tailwind Css, Shopify, Wordpress, HTML, CSS/SASS, Bootstrap, Vanilla Javascript / ES6,  SEO and GIT.</p>
+                <p>Able to apply creative and coding skills to complete projects efficiently and effectively.</p>
             </div>
         </section>
     )

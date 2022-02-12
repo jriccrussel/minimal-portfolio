@@ -12,6 +12,7 @@ const data = [
     {
         id: 1,
         title: "/ Asterisk",
+        link: "/",
         img: proj1,
         name: "Asterisks",
         technologies: "ReactJS"
@@ -19,6 +20,7 @@ const data = [
     {
         id: 2,
         title: "/ Unlocked",
+        link: "/",
         img: proj2,
         name: "Unlocked",
         technologies: "Shopify"
@@ -26,6 +28,7 @@ const data = [
     {
         id: 3,
         title: "/ Offbeat Radio",
+        link: "/",
         img: proj3,
         name: "Offbeat Radio",
         technologies: "GSAP"
@@ -33,6 +36,7 @@ const data = [
     {
         id: 4,
         title: "/ Brutal",
+        link: "/",
         img: proj4,
         name: "Brutals",
         technologies: "ReactJS"
@@ -40,6 +44,7 @@ const data = [
     {
         id: 5,
         title: "/ The Crew",
+        link: "/",
         img: proj5,
         name: "The Crews",
         technologies: "Wordpress"
@@ -53,12 +58,12 @@ const Sect6 = () => {
                 <div>
                     <nav className="menu">
                         {data.map((item, index) => {
-                            const { title, img, name, technologies, id } = item
+                            const { title, img, name, technologies, id, link } = item
                             
                             return(
                                 <div className="menu__item-outer" key={index}>
                                     <div className="menu__item">
-                                        <a className="menu__item-link">{title}</a>
+                                        <a className="menu__item-link" href={link} target="_blank">{title}</a>
                                         {/* <p className="tech">{technologies}</p> */}
                                         <img className="menu__item-img" src={img} alt="" />
                                         <div className="marquee">

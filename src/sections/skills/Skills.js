@@ -8,7 +8,7 @@ const Skills = () => {
             <div className="skills-container">
                 <p>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React,&nbsp;NextJs,&nbsp;GSAP,&nbsp;Styled Components,&nbsp;Tailwindcss,&nbsp;Shopify,&nbsp;Wordpress,&nbsp;SCSS,&nbsp;HTML 5,&nbsp;CSS 5,&nbsp;Adobe XD,&nbsp;Adobe Photoshop,&nbsp;Adobe Illustrator
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;React,&nbsp;NextJs,&nbsp;GSAP,&nbsp;Styled Components,&nbsp;Tailwindcss,&nbsp;Shopify,&nbsp;Wordpress,&nbsp;SCSS,&nbsp;HTML,&nbsp;CSS,&nbsp;Adobe XD,&nbsp;Photoshop,&nbsp;Illustrator,&nbsp;Figma
                     <br />
                 </p>
             </div>
