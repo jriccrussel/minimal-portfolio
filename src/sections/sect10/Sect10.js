@@ -27,11 +27,11 @@ const Sect10 = () => {
     return (
         <section className="socials">
             <div className="socials-container">
-                {data.map((item) => {
+                {data.map((item, i) => {
                     const {id, name, link} = item
                     return (
                         <>
-                            <div className="socials-id dr" key={id}>
+                            <div className="socials-id dr" key={item.id}>
                                 <a href={link} target="_blank">{name}</a>
                             </div>
                         </>
