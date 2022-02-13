@@ -7,9 +7,15 @@
             font-family: "Bigilla";
 	        font-size: 11rem;
             font-weight: 400;
+            // overflow: hidden;
 
             @media (max-width: 900px){
                 font-size: 5.4rem;
+            }
+
+            span{
+                // display: inline-block;
+                font-family: "Bigilla";
             }
         }
     }

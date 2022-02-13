@@ -1,7 +1,17 @@
 import { useEffect, useRef } from 'react'
-import LocomotiveScroll from 'locomotive-scroll'
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
-import 'locomotive-scroll/src/locomotive-scroll.scss'
+// import LocomotiveScroll from 'locomotive-scroll'
+// import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+// import 'locomotive-scroll/src/locomotive-scroll.scss'
+import {gsap} from 'gsap'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'
+import Scrollbar from 'smooth-scrollbar'
+import { TweenMax } from 'gsap/gsap-core'
+import ScrollToPlugin from "gsap/ScrollToPlugin"
+// import { ScrollToPlugin } from 'gsap/all'
+import OverscrollPlugin from 'smooth-scrollbar/plugins/overscroll'
+
+// import {Scrollbar} from 'smooth-scrollbar-react'
+
 
 // Components
 import Cursor from '../components/Cursor'
@@ -24,18 +34,49 @@ import Footer from './footer/Footer'
 import Skills from './skills/Skills'
 import SkillsHeader from './skills/SkillsHeader'
 
+gsap.registerPlugin(ScrollTrigger)
+gsap.core.globals('ScrollTrigger', ScrollTrigger)
+
 const Index1 = () => {
     const ref = useRef(null)
 
     useEffect(() => {
-        document.title = "Welcome to My Portfolio | Jeffone Audric Russel"
+
+        Scrollbar.use(OverscrollPlugin)
+
+        Scrollbar.init(document.querySelector('#viewport'), {
+            plugins: {
+                overscroll: {
+                    effect: "glow",
+                    glowColor: '#fff'
+                },
+            },
+        })        
+
+        let bodyScrollBar = Scrollbar.init(document.querySelector("[data-scrollbar]"), {
+            damping: 0.07,
+        })
+
+        ScrollTrigger.scrollerProxy("body", {
+            scrollTop(value) {
+                if (arguments.length) {
+                bodyScrollBar.scrollTop = value;
+                }
+                return bodyScrollBar.scrollTop;
+            },
+        })
+
+        bodyScrollBar.addListener(ScrollTrigger.update)
+
+        document.title = "Welcome Guest, I'm Jeffone Audric Russel and I'm a Front-End Developer"
+        
     }, [])
 
     return (
 
         <>
             <Cursor />
-            <LocomotiveScrollProvider
+            {/* <LocomotiveScrollProvider
                 options={
                     {
                         smooth: true,
@@ -48,7 +89,6 @@ const Index1 = () => {
                     <div className="wrapper">
                         <div className="container">
                             <Nav />
-                            <div className="div1"></div>
                             <Sect1 />
                             <Sect2 />
                             <Spacing />
@@ -78,7 +118,90 @@ const Index1 = () => {
                         </div>
                     </div>
                 </main>
-            </LocomotiveScrollProvider>
+            </LocomotiveScrollProvider> */}
+
+            {/* <Scrollbar
+                damping={0.07}
+                plugins={{
+                    overscroll: {
+                        effect: "glow",
+                        glowColor: '#fff'
+                    },
+                }
+            }>
+                <div id="viewport">
+                    <main>
+                        <div className="wrapper">
+                            <div className="container">
+                                <Nav />
+                                <Sect1 />
+                                <Sect2 />
+                                <Spacing />
+                                <Sect3 />
+                                <div className="div2"></div>
+                                <Sect4 />
+                                <Spacing />
+                                <Sect5/>
+                                <div className="div3"></div>
+                                <Sect6 />
+                                <Spacing />
+                                <Spacing />
+                                <SkillsHeader />
+                                <div className="div5"></div>
+                                <Skills />
+                                <Spacing />
+                                <Sect7 />
+                                <div className="div6"></div>
+                                <Sect8 />
+                                <Spacing />
+                                <Sect9 />
+                                <div className="div7"></div>
+                                <Sect10 />
+                                <div className="div8"></div>
+                                <Footer />
+                                <br />
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </Scrollbar> */}
+
+            <div id="viewport" data-scrollbar>
+                <main>
+                    <div className="wrapper">
+                        <div className="container">
+                            <Nav />
+                            <Sect1 />
+                            <Sect2 />
+                            <Spacing />
+                            <Sect3 />
+                            <div className="div2"></div>
+                            <Sect4 />
+                            <Spacing />
+                            <Sect5/>
+                            <div className="div3"></div>
+                            <Sect6 />
+                            <Spacing />
+                            <Spacing />
+                            <SkillsHeader />
+                            <div className="div5"></div>
+                            <Skills />
+                            <Spacing />
+                            <Sect7 />
+                            <div className="div6"></div>
+                            <Sect8 />
+                            <Spacing />
+                            <Sect9 />
+                            <div className="div7"></div>
+                            <Sect10 />
+                            <div className="div8"></div>
+                            <Footer />
+                            <br />
+                        </div>
+                    </div>
+                </main>
+            </div>
+            
         </>
     )
 }
