@@ -27,21 +27,11 @@ import SkillsHeader from './skills/SkillsHeader'
 const Index1 = () => {
     const ref = useRef(null)
 
-    // useEffect(() => {
-    //     const scroll = new LocomotiveScroll({
-    //         el: ref.current,
-    //         smooth: true,
-    //         smoothMobile: true,
-    //         inertia: 0.75,
-    //     })
-    //     console.log(scroll)
-    // }, [])
+    useEffect(() => {
+        document.title = "Welcome to My Portfolio | Jeffone Audric Russel"
+    }, [])
 
     return (
-        // <main ref={ref}>
-        //     <Sect1 />
-        // </main>
-
 
         <>
             <Cursor />
