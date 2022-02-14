@@ -30,22 +30,27 @@ body{
   height: 100%;
   width: 100%;
   
-  overflow: hidden;
+  // overflow-y: hidden;
   // overflow-y: scroll;
 }
 
 .wrapper {
-	overflow: hidden; 
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  
+	// overflow: hidden; 
+  // position: fixed;
+  // height: 100%;
+  // width: 100%;
+  // top: 0;
+  // left: 0;
+  width:100vw;
+  height:100vh;
+  overflow: auto;
 
   .container{
     width: 96%;
     margin: 0px auto;
+    position: relative;
+    overflow: hidden;
+    height:100%;
   }
 }
 
@@ -109,10 +114,10 @@ body{
 // #viewport{
 //   height: 100vh;
 // }
-.scrollbar-track{
-  background: rgb(85 85 85 / 18%) !important;
-  display: none !important;
-  @media only screen and (max-width: 768px){
-      display: block !important;
-  }
-}
+// .scrollbar-track{
+//   background: rgb(85 85 85 / 18%) !important;
+//   display: none !important;
+//   @media only screen and (max-width: 768px){
+//       display: block !important;
+//   }
+// }
