@@ -20,11 +20,14 @@ const Nav = () => {
             stagger: 0.1,  
         })
 
-        let tl = new TimelineLite({delay:0.5})
+        // let tl = new TimelineLite({delay:1})
         
-        tl.from(".div1", 1, {
+        gsap.from(".div1", 1, {
             scaleX: 0,
+            autoAlpha: 0,
+            ease: "power3.inOut",
             transformOrigin:"left",
+            stagger: 0.1,  
         })
     }, [])
 

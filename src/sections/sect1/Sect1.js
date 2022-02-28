@@ -5,6 +5,7 @@ import Scrollbar from "smooth-scrollbar"
 import { TweenMax } from 'gsap/gsap-core'
 import ScrollToPlugin from "gsap/ScrollToPlugin"
 import { useEffect } from 'react'
+import anime from 'animejs'
 import './Sect1.scss'
 
 gsap.registerPlugin(ScrollTrigger)
@@ -91,6 +92,27 @@ const Sect1 = () => {
         //         scrub: true,
         //     }
         // })
+        let heroTxtOne = document.querySelector('.t1')
+        heroTxtOne.innerHTML = heroTxtOne.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
+
+        let heroTxtTwo = document.querySelector('.t2')
+        heroTxtTwo.innerHTML = heroTxtTwo.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
+
+        let heroTxtTri = document.querySelector('.t3')
+        heroTxtTri.innerHTML = heroTxtTri.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
+
+        let heroTxtFour = document.querySelector('.t4')
+        heroTxtFour.innerHTML = heroTxtFour.textContent.replace(/\S/g, "<span class='letter'>$&</span>")
+
+        anime.timeline().add({
+            targets: [".t1 .letter", ".t2 .letter", ".t3 .letter", ".t4 .letter"],
+            translateY: [60, 0],
+            translateZ: 0,
+            opacity: [0, 1],
+            easing: "easeOutExpo",
+            duration: 2000,
+            delay: (el, i) => 1200 + 30 * i,
+        })
 
     },[])
 
