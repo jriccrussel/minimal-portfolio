@@ -6,7 +6,7 @@ const Sect8 = () => {
             <div className="clients-container">
                 <p>
                     <br />
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apart from being a Front-End Developer, I enjoy most of my time listening to podcast and music genres like hip-hop, jazz, deep house, lofi music and tropical house and also enjoy watching series and I spend a large amount of my free time exploring and trying out what's latest trends in other websites or web app technologies.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Apart from being a Front-End Developer, I also love watching series and spend most of my free time exploring and trying out the latest trends in websites and other web app technologies. I also enjoy listening to podcasts and music, especially hip-hop, jazz, deep house, lofi music, and tropical house.
                     <br />
                 </p>
             </div>
